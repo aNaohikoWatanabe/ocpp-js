@@ -3,6 +3,10 @@ var OCPP =  require('./index.js');
 var options = {
   chargingPoint: {
 	//wsdl: 'http://ev.moesk.ru/ocpp/CentralSystemService15?wsdl',
+
+    // If you want to place Server(CentralSystem) and Client(ChargePoint)
+    // on a different IP, please edit Server IP and enable following.
+    //serverURI: 'http://xxx.xxx.xxx.xxx:9220/Ocpp/CentralSystemService',
     wsdl: 'http://127.0.0.1:9220/Ocpp/CentralSystemService?wsdl',
     name: 'PCS_Premium_00000001'
   },
