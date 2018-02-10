@@ -145,13 +145,16 @@ const Notification = mongoose.model('Notification', notificationSchema);
 const MeterValues = mongoose.model('MeterValues', meterValuesSchema);
 const User = mongoose.model('User', userSchema);
 const Transaction = mongoose.model('Transaction', transactionsSchema);
+const options = {
+    useMongoClient: true
+};
 
 class MongoDB {
     constructor() {
         var mongoConf = config.get('mongodb');
         this.url = mongoConf.url;
         if(!instance) {
-            mongoose.connect(this.url).then(
+            mongoose.connect(this.url, options).then(
                () => {
                     // Ready to use
                     console.log('[MongoDB] Connected successfully.');
