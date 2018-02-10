@@ -81,3 +81,13 @@ var chargingPoint1 = ocppJS.createChargingPoint();
 var chargingPointServer = ocppJS.createChargingPointServer(9221);
 
 ```
+
+Describe the starting method simply.
+
+```
+// open terminal
+$ node ./examples/server.js
+
+// open another terminal
+$ node ./charge_box.js
+```
