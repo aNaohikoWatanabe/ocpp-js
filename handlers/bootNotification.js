@@ -52,7 +52,7 @@ module.exports = {
                             }, {
                                 id: 2,
                                 status: 'Unkown',
-                                consumption: '0 kW'
+                                consumption: '0'
                             }]
                             data.status = 'Unkown';
                             data.consumption = 0;
